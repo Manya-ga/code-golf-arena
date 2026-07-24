@@ -1,0 +1,6 @@
+# Dependencies, secrets, logs, and generated output should not be committed.
+node_modules/
+.env
+*.log
+coverage/
+dist/

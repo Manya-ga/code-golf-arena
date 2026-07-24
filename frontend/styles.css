@@ -1,0 +1,15 @@
+:root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; background: #08111e; color: #e9f0fb; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(circle at top left, #162c48, #08111e 45%); }
+.shell { width: min(960px, calc(100% - 32px)); margin: 56px auto; }
+header { margin-bottom: 28px; } h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 4rem); letter-spacing: -.06em; } h2, h3 { margin-top: 0; }
+.eyebrow { color: #7dd3fc; letter-spacing: .14em; font-weight: 700; font-size: .75rem; margin-bottom: 8px; }
+.card { margin: 16px 0; padding: 24px; background: #101e31cc; border: 1px solid #2c4869; border-radius: 16px; box-shadow: 0 15px 40px #0004; }
+.hidden { display: none !important; }.notice { min-height: 24px; color: #b8c7da; }.notice.error { color: #fca5a5; }.notice.success { color: #86efac; }
+.inline-form, .split { display: flex; gap: 16px; }.split > * { flex: 1; }.section-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+form { display: grid; gap: 14px; } label { display: grid; gap: 6px; color: #c7d2e2; font-size: .9rem; }
+input, select, textarea, button { border-radius: 8px; font: inherit; } input, select, textarea { width: 100%; border: 1px solid #41607f; background: #081524; color: inherit; padding: 10px 12px; }
+textarea { height: 260px; resize: vertical; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; line-height: 1.45; } button { border: 0; background: #38bdf8; color: #062033; padding: 10px 15px; font-weight: 800; cursor: pointer; } button:hover { background: #7dd3fc; }
+.muted { color: #9db0c8; font-size: .9rem; } button:disabled { background: #38546c; color: #aab9c8; cursor: not-allowed; }
+.status { padding: 6px 10px; background: #183b59; color: #7dd3fc; border-radius: 999px; font-size: .8rem; text-transform: uppercase; }.game-grid { margin: 22px 0; } li { padding: 5px 0; } pre { white-space: pre-wrap; overflow-wrap: anywhere; padding: 16px; border-radius: 8px; background: #06111e; border: 1px solid #25425f; }
+@media (max-width: 680px) { .shell { margin: 28px auto; }.split, .inline-form { flex-direction: column; }.section-heading { align-items: flex-start; flex-direction: column; } }

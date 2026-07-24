@@ -1,0 +1,6 @@
+# Root repository ignore rules for the Code Golf Arena application.
+node_modules/
+.env
+*.log
+coverage/
+dist/
